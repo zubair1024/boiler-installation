@@ -619,7 +619,7 @@ function unique_multidim_array($array, $key) {
 } 
 
 function get_make() {
-	$client = new SoapClient("http://engineers4.flynetmedia.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	$client = new SoapClient("https://api.247staywarm.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$boilers = $client->__soapCall("Service_GetMakeModel", array());
 	$boilers = obj2array($boilers);
 	$boilers = $boilers['Service_GetMakeModelResult']['CertDdls'];
@@ -636,7 +636,7 @@ function get_make() {
 }
 
 function get_model($make) {
-	$client = new SoapClient("http://engineers4.flynetmedia.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	$client = new SoapClient("https://api.247staywarm.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$boilers = $client->__soapCall("Service_GetMakeModel", array());
 	$boilers = obj2array($boilers);
 	$boilers = $boilers['Service_GetMakeModelResult']['CertDdls'];
