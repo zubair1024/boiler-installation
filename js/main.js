@@ -12,7 +12,7 @@
     }
     if($('#calendar').length > 0) {
       $('#calendar').fullCalendar({
-        defaultView: 'agendaFourDays',
+        defaultView: 'basicWeek',
         startDate: new Date(),
         defaultDate: new Date(new Date().getTime()+(2*24*60*60*1000)),
         views: {
@@ -31,7 +31,7 @@
         displayEventTime : false,
         slotDuration: '02:00:00',
         columnHeaderFormat: 'dddd D MMMM',
-        // weekends: false,
+        weekends: false,
         height: 400,
         themeSystem: 'bootstrap4',
         events: {
