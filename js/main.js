@@ -12,7 +12,7 @@
     }
     if ($('#calendar').length > 0) {
       $('#calendar').fullCalendar({
-        defaultView: 'basicWeek',
+        defaultView: 'month',
         startDate: new Date(),
         defaultDate: new Date(new Date().getTime() + (2 * 24 * 60 * 60 * 1000)),
         views: {
@@ -32,7 +32,7 @@
         slotDuration: '02:00:00',
         columnHeaderFormat: 'dddd D MMMM',
         weekends: false,
-        height: 400,
+        height: 800,
         themeSystem: 'bootstrap4',
         events: {
           url: '/calendar-callbacks.php',
