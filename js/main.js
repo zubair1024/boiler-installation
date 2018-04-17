@@ -63,7 +63,7 @@
           $(this).css('border-color', '#df1514');
         },
         eventRender: function (event, element, view) {
-          $(element).css("margin", "0px 25px 5px 25px");
+          // $(element).css("margin", "0px 25px 5px 25px");
         }
       });
     }
