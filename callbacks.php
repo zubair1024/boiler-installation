@@ -361,8 +361,8 @@ function question_and_options($ques_num, $opt_selected,$next) {
 						<p>This allows you to set and control the temperature.</p>
 						<div class='ans-wrapper'>
 							<a onclick=\"optSelect('eleven','No thermostat','twelve',this);\"><img src='img/thermostat-0.png'></a>
-							<a onclick=\"optSelect('eleven','One thermostat','twelve',this);\"><img src='img/thermostat-1.png'></a>
-							<a onclick=\"optSelect('eleven','Two or more thermostats','twelve',this);\"><img src='img/thermostats-2-or-more.png'></a>
+							<a onclick=\"optSelect('eleven','Wired thermostat','twelve',this);\"><img src='img/thermostat-wired.png'></a>
+							<a onclick=\"optSelect('eleven','Not wired thermostat','twelve',this);\"><img src='img/thermostat-not-wired.png'></a>
 						</div>
 					</div>	
 				</div>
@@ -619,7 +619,7 @@ function unique_multidim_array($array, $key) {
 } 
 
 function get_make() {
-	$client = new SoapClient("https://api.247staywarm.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	$client = new SoapClient("https://hr360api.247staywarm.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$boilers = $client->__soapCall("Service_GetMakeModel", array());
 	$boilers = obj2array($boilers);
 	$boilers = $boilers['Service_GetMakeModelResult']['CertDdls'];
@@ -636,7 +636,9 @@ function get_make() {
 }
 
 function get_model($make) {
-	$client = new SoapClient("https://api.247staywarm.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	// $client = new SoapClient("http://engineers4.flynetmedia.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	$client = new SoapClient("https://hr360api.247staywarm.co.uk/Service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+
 	$boilers = $client->__soapCall("Service_GetMakeModel", array());
 	$boilers = obj2array($boilers);
 	$boilers = $boilers['Service_GetMakeModelResult']['CertDdls'];

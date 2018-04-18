@@ -74,7 +74,7 @@ function get_periods() {
 
 	$stTime = date('M d, Y', $stTime);
 	$enTime = date('M d, Y', $enTime);
-	$duration = 240;
+	$duration = 120;
 	$break = 0;
 
   $start = new DateTime($stTime);
@@ -93,9 +93,9 @@ function get_periods() {
 		$dayOfWeek = date("l", $unixTimestamp);
 
 		if($dayOfWeek != 'Sunday' && $dayOfWeek != 'Saturday'){
-			if($intStart->format('Y-m-d H:i:s') >= $intStart->format('Y-m-d 08:00:00') && $intStart->format('Y-m-d H:i:s') <= $intStart->format('Y-m-d 15:00:00')) {
+			if($intStart->format('Y-m-d H:i:s') >= $intStart->format('Y-m-d 08:00:00') && $intStart->format('Y-m-d H:i:s') <= $intStart->format('Y-m-d 18:00:00')) {
 				$periods[] = [
-					'title' => $intStart->format('g A').' - '. $endPeriod->format('g A'),
+					'title' => $intStart->format('g A'),
 					'start' => $intStart->format('Y-m-d H:i:s'),
 					'end' => $endPeriod->format('Y-m-d H:i:s')  
 				];

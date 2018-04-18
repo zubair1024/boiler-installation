@@ -13,7 +13,7 @@
 	$id = $_SESSION[session_id()]['product_id'];
 	$bedroom = $_SESSION[session_id()]['data']['HowManyRadiatorsAreInYourHome']['optionsSelected'];
 	$bathroom = $_SESSION[session_id()]['data']['nine']['optionsSelected'];
-	$client = new SoapClient("http://crm.247labs.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	$client = new SoapClient("https://api.247staywarm.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$params = array(
 		'rooms' => (int)$bedroom,
 		'brooms' => (int)$bathroom
@@ -25,7 +25,7 @@
 	<div class="container section-one">
 			<div class="heading">
 				<h1>Your quote</h1>
-				<p>Your quote is valid for 14 days. <b>Book your free no-obligation survey below.</b></p>
+				<p>Your Quote is based on what you told us about your boiler.<br><br>The price shown is the Initial Payment with a service contract of £40 per month over 84 months / 7 years (Subject To Site Survey).<br><br><b>Book your free no-obligation survey below.</b></p>
 			</div>
 			<div class="boiler-info">
 				<?php foreach ($recommeded_boilers as $key => $boiler): ?>
@@ -35,7 +35,7 @@
 					<?php endif ?>
 				<?php endforeach ?>
 			</div>
-			<p>Your quote is based on what you told us about your boiler and some assumptions that we’ve made.</p>
+			<!-- <p>Your quote is based on what you told us about your boiler and some assumptions that we’ve made.</p> -->
 	</div>
 	<div class="contact-info">
 		<div class="container">

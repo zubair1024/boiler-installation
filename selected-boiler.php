@@ -10,7 +10,7 @@
 	$id = $_SESSION[session_id()]['product_id'];
 	$bedroom = $_SESSION[session_id()]['data']['eight']['optionsSelected'];
 	$bathroom = $_SESSION[session_id()]['data']['nine']['optionsSelected'];
-	$client = new SoapClient("http://crm.247labs.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	$client = new SoapClient("https://api.247staywarm.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$params = array(
 		'rooms' => (int)$bedroom,
 		'brooms' => (int)$bathroom
@@ -45,7 +45,8 @@
 						<ul>
 							<li>An energy Efficient boiler</li>
 							<li>Precision heating to reduce your fuel bills</li>
-							<li>Available in a selection of styles and sizes and are designed to meet your energy efficiency needs</li>
+							<li>Available in a selection of styles and sizes</li>
+							<li>Designed to meet your energy efficiency needs</li>
 							<li>Quiet and compact in size</li>
 							<li>Full range of smart thermostat controls</li>
 							<li>Registration &amp; Activation of your warranty</li>

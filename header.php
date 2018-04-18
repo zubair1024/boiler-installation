@@ -6,6 +6,16 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117756222-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117756222-1');
+</script>
+
 </head>
 <body>
 	<?php  $current_uri = $_SERVER['REQUEST_URI'];?>
@@ -23,7 +33,7 @@
 						<li><a class="<?php if(strpos($current_uri, '/')) echo "active"; ?>" href="/">Home</a></li>
 						<li><a class="<?php if(strpos($current_uri, 'boiler-installation-quote')) echo "active"; ?>" href="/boiler-installation-quote">Get a quote</a></li>
 						<li><a class="<?php if(strpos($current_uri, 'faqs')) echo "active"; ?>" href="/faqs">FAQs</a></li>
-						<li><a class="" href="https://www.247homerescue.co.uk/new-contact/" target="_blank">Contact</a></li>
+						<li><a class="" href="https://www.247homerescue.co.uk/new-contact/">Contact</a></li>
 					</ul>
 				</div>
 			<!-- </div> -->

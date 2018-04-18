@@ -14,7 +14,7 @@
 	$product_id = $_SESSION[session_id()]['product_id'];
 	$bedroom = $_SESSION[session_id()]['data']['HowManyRadiatorsAreInYourHome']['optionsSelected'];
 	$bathroom = $_SESSION[session_id()]['data']['nine']['optionsSelected'];
-	$client = new SoapClient("http://crm.247labs.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	$client = new SoapClient("https://api.247staywarm.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$params = array(
 		'rooms' => (int)$bedroom,
 		'brooms' => (int)$bathroom
@@ -28,7 +28,7 @@
 	}
 	// - Get booking date and time
 	$booking_date = strtotime($_SESSION[session_id()]['data']['slot']);
-	$booking_date_and_time = date('l jS F',$booking_date).' at '.date('ha', $booking_date);
+	$booking_date_and_time = date('l jS F',$booking_date).' at '.date('ga', $booking_date);
 
 ?>
 <div class="main-container order">

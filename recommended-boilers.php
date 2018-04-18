@@ -9,7 +9,7 @@
 	// print_r($_SESSION[session_id()]);
 	$bedroom = $_SESSION[session_id()]['data']['HowManyRadiatorsAreInYourHome']['optionsSelected'];
 	$bathroom = $_SESSION[session_id()]['data']['nine']['optionsSelected'];
-	$client = new SoapClient("http://crm.247labs.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
+	$client = new SoapClient("https://api.247staywarm.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$params = array(
 		'rooms' => (int)$bedroom,
 		'brooms' => (int)$bathroom
