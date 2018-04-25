@@ -6,59 +6,78 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117756222-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117756222-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-  gtag('config', 'UA-117756222-1');
-</script>
+		gtag('config', 'UA-117756222-1');
+	</script>
+	<!-- TrustBox script -->
+	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+	<!-- End Trustbox script -->
 </head>
 <body>
 	<?php  $current_uri = $_SERVER['REQUEST_URI'];?>
 	<header id="nav-header">
 		<div class="container">
-			<!-- <div class="row"> -->
-				<div class="logo">
-					<a id="logo" href="/"><img src="img/logo.png"></a>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<div class="logo">
+						<a id="logo" href="/"><img src="img/logo.png"></a>
+					</div>
+					<div class="menu-icon">
+						<i class="fas fa-bars"></i>
+					</div>
 				</div>
-				<div class="menu-icon">
-					<i class="fas fa-bars"></i>
+				<div class="col-lg-2 hidden-md-down trustpilot-trustbox">
+					<div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5304d93900006400057840a9" data-style-height="150px" data-style-width="100%" data-theme="light">
+						<a href="https://www.trustpilot.com/review/247homerescue.co.uk" target="_blank">Trustpilot</a>
+					</div>
 				</div>
-				<div class="main-nav">
-					<ul>
-						<li><a class="<?php if(strpos($current_uri, '/')) echo "active"; ?>" href="/">Home</a></li>
-						<li><a class="<?php if(strpos($current_uri, 'boiler-installation-quote')) echo "active"; ?>" href="/boiler-installation-quote">Get a quote</a></li>
-						<li><a class="<?php if(strpos($current_uri, 'faqs')) echo "active"; ?>" href="/faqs">FAQs</a></li>
-						<li><a class="" href="https://www.247homerescue.co.uk/new-contact/">Contact</a></li>
-					</ul>
+				<div class="col-lg-7 col-md-9 col-sm-9">
+					<div class="main-nav">
+						<ul>
+							<li><a class="<?php if(strpos($current_uri, '/')) echo "active"; ?>" href="/">Home</a></li>
+							<li><a class="" href="https://www.247homerescue.co.uk/about-us/">About Us</a></li>
+							<li><a class="<?php if(strpos($current_uri, 'boiler-installation-quote')) echo "active"; ?>" href="/boiler-installation-quote">Get a quote</a></li>
+							<li><a class="<?php if(strpos($current_uri, 'faqs')) echo "active"; ?>" href="/faqs">FAQs</a></li>
+							<li><a class="" href="https://www.247homerescue.co.uk/testimonials/">Testimonials</a></li>
+							<li><a class="" href="https://www.247homerescue.co.uk/new-contact/">Contact</a></li>
+						</ul>
+					</div>
 				</div>
-			<!-- </div> -->
-			<!-- <div class="row"> -->
+				<div  class="col-sm-12 hidden-lg-up trustpilot-trustbox">
+					<div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="5304d93900006400057840a9" data-style-height="24px" data-style-width="100%" data-theme="light">
+						<a href="https://www.trustpilot.com/review/247homerescue.co.uk" target="_blank">Trustpilot</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
 				<div class="contact-info"><p>Need help with your new boiler? Call us on <span class="num">0345 3192 247</span></p></div>
-			<!-- </div> -->
+			</div>
 		</div>
 	</header>
-<?php 
+	<?php 
 	// - Check and initialise session
 	if (session_status() == PHP_SESSION_NONE) {
-    session_start();
+		session_start();
 	}
 	session_id();
-?>
-<div class="main-container">
-	<div class="section-one main-banner">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 main-text">
-					<h1>Need a new boiler?</h1>
-					<div class="boiler-image">
-						<img src="img/main-boiler-image.png" alt="">
+	?>
+	<div class="main-container">
+		<div class="section-one main-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 main-text">
+						<h1>Need a new boiler?</h1>
+						<div class="boiler-image">
+							<img src="img/main-boiler-image.png" alt="">
+						</div>
+						<p>Buy a new boiler on-line today by 3pm and get it installed the next day</p>
+						<a href="/boiler-installation-quote" class="btn">Get a price in 90 seconds</a>
 					</div>
-					<p>Buy a new boiler on-line today by 3pm and get it installed the next day</p>
-					<a href="/boiler-installation-quote" class="btn">Get a price in 90 seconds</a>
-				</div>
 				<!-- <div class="col-md-4 boiler-image">
 					<img src="img/main-boiler-image.png" alt="">
 				</div> -->
@@ -72,7 +91,7 @@
 				<p class="section-intro-text">We guarantee your hot water and heating for 7 years, with an annual service every year!<br> 
 				As an added bonus we will provide our Home Emergency Deluxe Plan, this will include:</p>
 				<div class="col-md-6 circle-feature">
-						<p><span class="bigger-text">7 Year<br></span> Promise</p>
+					<p><span class="bigger-text">7 Year<br></span> Promise</p>
 				</div>
 				<div class="col-md-6 features-list">
 					<ul>
@@ -90,7 +109,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 feature-image">
-						<img src="img/trusted-provider.png" alt="">
+					<img src="img/trusted-provider.png" alt="">
 				</div>
 				<div class="col-md-6 features">
 					<h2>Experienced engineers</h2>

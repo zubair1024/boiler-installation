@@ -15,30 +15,45 @@
 
   gtag('config', 'UA-117756222-1');
 </script>
-
+<!-- TrustBox script -->
+	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+	<!-- End Trustbox script -->
 </head>
 <body>
 	<?php  $current_uri = $_SERVER['REQUEST_URI'];?>
 	<header id="nav-header">
 		<div class="container">
-			<!-- <div class="row"> -->
-				<div class="logo">
-					<a id="logo" href="/"><img src="img/logo.png"></a>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<div class="logo">
+						<a id="logo" href="/"><img src="img/logo.png"></a>
+					</div>
+					<div class="menu-icon">
+						<i class="fas fa-bars"></i>
+					</div>
 				</div>
-				<div class="menu-icon">
-					<i class="fas fa-bars"></i>
+				<div class="col-lg-2 hidden-md-down trustpilot-trustbox">
+					<div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5304d93900006400057840a9" data-style-height="150px" data-style-width="100%" data-theme="light">
+						<a href="https://www.trustpilot.com/review/247homerescue.co.uk" target="_blank">Trustpilot</a>
+					</div>
 				</div>
-				<div class="main-nav">
-					<ul>
-						<li><a class="<?php if(strpos($current_uri, '/')) echo "active"; ?>" href="/">Home</a></li>
-						<li><a class="<?php if(strpos($current_uri, 'boiler-installation-quote')) echo "active"; ?>" href="/boiler-installation-quote">Get a quote</a></li>
-						<li><a class="<?php if(strpos($current_uri, 'faqs')) echo "active"; ?>" href="/faqs">FAQs</a></li>
-						<li><a class="" href="https://www.247homerescue.co.uk/new-contact/">Contact</a></li>
-					</ul>
+				<div class="col-lg-7 col-md-9 col-sm-9">
+					<div class="main-nav">
+						<ul>
+							<li><a class="<?php if(strpos($current_uri, '/')) echo "active"; ?>" href="/">Home</a></li>
+							<li><a class="" href="https://www.247homerescue.co.uk/about-us/">About Us</a></li>
+							<li><a class="<?php if(strpos($current_uri, 'boiler-installation-quote')) echo "active"; ?>" href="/boiler-installation-quote">Get a quote</a></li>
+							<li><a class="<?php if(strpos($current_uri, 'faqs')) echo "active"; ?>" href="/faqs">FAQs</a></li>
+							<li><a class="" href="https://www.247homerescue.co.uk/testimonials/">Testimonials</a></li>
+							<li><a class="" href="https://www.247homerescue.co.uk/new-contact/">Contact</a></li>
+						</ul>
+					</div>
 				</div>
-			<!-- </div> -->
-			<!-- <div class="row"> -->
-				<!-- <div class="contact-info"><p>Need help with your new boiler? Call us on <span class="num">0345 3192 247</span></p></div> -->
-			<!-- </div> -->
+				<div  class="col-sm-12 hidden-lg-up trustpilot-trustbox">
+					<div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="5304d93900006400057840a9" data-style-height="24px" data-style-width="100%" data-theme="light">
+						<a href="https://www.trustpilot.com/review/247homerescue.co.uk" target="_blank">Trustpilot</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>

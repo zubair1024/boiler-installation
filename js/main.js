@@ -106,15 +106,27 @@
 })(jQuery);
 
 function optSelect(num, opt, next, el) {
+  console.log('optSelect');
   jQuery(el).parent().find(jQuery('a')).removeClass("selected");
   jQuery(el).addClass("selected");
+
+
+  if (num == "fifteen") {
+    $(".btn-loader").css("display", "block");
+  }
+
   jQuery.ajax({
     type: "POST",
     url: "/callbacks.php",
     data: { type: 'questions', quesNum: num, optSelected: opt, nxt: next },
     dataType: 'json',
     success: function (response) {
-      display(response.html, response.divInfo)
+
+      if (num == "fifteen") {
+        window.location.href = '/recommended-boilers';
+      } else {
+        display(response.html, response.divInfo)
+      }
     }
   });
 }

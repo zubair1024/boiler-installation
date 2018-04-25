@@ -534,6 +534,7 @@ function question_and_options($ques_num, $opt_selected,$next) {
 						</div>
 					</div>	
 				</div>
+				<button style=\"display: none\" class=\"btn btn-default btn-lg btn-loader\"><i class=\"fa fa-spinner fa-spin\"></i> Loading</button>
 				";	
 				$div_info = ['quesNumber' => $ques_num, 'next' => 'data-'.$next, 'sub' => true];
 				manage_session_data($html,$ques_num,$opt_selected);

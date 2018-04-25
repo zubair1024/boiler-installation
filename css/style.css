@@ -6514,7 +6514,7 @@ a.text-dark:hover, a.text-dark:focus {
   #nav-header .main-nav {
     display: none;
     position: absolute;
-    top: 64px;
+    top: 41px;
     width: 100%;
     z-index: 2;
     left: 0;
@@ -6525,7 +6525,7 @@ a.text-dark:hover, a.text-dark:focus {
       padding-left: 0px; }
       #nav-header .main-nav ul li {
         list-style: none;
-        padding-left: 15px;
+        padding-left: 10px;
         border-bottom: 1px solid #e2e2e2; }
         #nav-header .main-nav ul li a {
           font-size: 15px;
@@ -6584,7 +6584,7 @@ a.text-dark:hover, a.text-dark:focus {
           #nav-header .main-nav ul li a {
             font-size: 15px;
             line-height: 118px;
-            padding: 40px; }
+            padding: 3px; }
             #nav-header .main-nav ul li a:hover, #nav-header .main-nav ul li a:focus {
               color: #df1514;
               text-decoration: none; }
@@ -6596,7 +6596,7 @@ a.text-dark:hover, a.text-dark:focus {
       position: relative; }
       #nav-header .container .contact-info {
         position: absolute;
-        top: 119px;
+        top: 150px;
         right: 15px;
         width: auto;
         background-color: #00aeef;
@@ -7314,5 +7314,112 @@ a {
 .terms-and-conditions {
   font-size: 12px;
   text-align: center; }
+
+
+  /*\
+ * Restore Bootstrap 3 "hidden" utility classes.
+ \*/
+
+ /* Breakpoint XS */
+ @media (max-width: 575px)
+ {
+  .hidden-xs-down, .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down, 
+  .hidden-xs-up, 
+  .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
+  {
+    display: none !important;
+  }
+
+}
+
+/* Breakpoint SM */
+@media (min-width: 576px) and (max-width: 767px)
+{
+  .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down, 
+  .hidden-xs-up, .hidden-sm-up, 
+  .hidden-unless-xs, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
+  {
+    display: none !important;
+  } 
+}
+
+/* Breakpoint MD */
+@media (min-width: 768px) and (max-width: 991px)
+{
+  .hidden-md-down, .hidden-lg-down, .hidden-xl-down, 
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, 
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-lg, .hidden-unless-xl
+  {
+    display: none !important;
+  } 
+}
+
+/* Breakpoint LG */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+  .hidden-lg-down, .hidden-xl-down, 
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up, 
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-xl
+  {
+    display: none !important;
+  } 
+}
+
+/* Breakpoint XL */
+@media (min-width: 1200px)
+{
+  .hidden-xl-down, 
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up, 
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg
+  {
+    display: none !important;
+  } 
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+  #nav-header .container .contact-info {
+    top: 118px;
+  }
+}
+
+
+@media (min-width: 992px){
+  .trustpilot-trustbox{
+  top: 25px;
+}
+}
+
+
+@media (min-width: 576px) and (max-width: 992px){
+  .trustpilot-trustbox{
+  top: -33px;
+}
+}
+
+
+@media (max-width: 576px){
+  .trustpilot-trustbox{
+  top: -7px;
+}
+
+#nav-header .container .contact-info {
+    top: 88px;
+  }
+
+  #nav-header .container .contact-info p {
+    font-size: 14px;
+}
+
+#nav-header .container .contact-info {
+  padding: 8px 8px 0px;
+}
+
+#nav-header .main-nav {
+  top: 24px;
+}
+}
+
+
 
 /*# sourceMappingURL=style.css.map */

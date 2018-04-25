@@ -17,42 +17,46 @@
 
         gtag('config', 'UA-117756222-1');
     </script>
-
+    <!-- TrustBox script -->
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+    <!-- End Trustbox script -->
 </head>
-
 <body>
     <?php  $current_uri = $_SERVER['REQUEST_URI'];?>
     <header id="nav-header">
         <div class="container">
-            <!-- <div class="row"> -->
-            <div class="logo">
-                <a id="logo" href="/">
-                    <img src="img/logo.png">
-                </a>
+          <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="logo">
+                        <a id="logo" href="/"><img src="img/logo.png"></a>
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 hidden-md-down trustpilot-trustbox">
+                    <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5304d93900006400057840a9" data-style-height="150px" data-style-width="100%" data-theme="light">
+                        <a href="https://www.trustpilot.com/review/247homerescue.co.uk" target="_blank">Trustpilot</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-9 col-sm-9">
+                    <div class="main-nav">
+                        <ul>
+                            <li><a class="<?php if(strpos($current_uri, '/')) echo "active"; ?>" href="/">Home</a></li>
+                            <li><a class="" href="https://www.247homerescue.co.uk/about-us/">About Us</a></li>
+                            <li><a class="<?php if(strpos($current_uri, 'boiler-installation-quote')) echo "active"; ?>" href="/boiler-installation-quote">Get a quote</a></li>
+                            <li><a class="<?php if(strpos($current_uri, 'faqs')) echo "active"; ?>" href="/faqs">FAQs</a></li>
+                            <li><a class="" href="https://www.247homerescue.co.uk/testimonials/">Testimonials</a></li>
+                            <li><a class="" href="https://www.247homerescue.co.uk/new-contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div  class="col-sm-12 hidden-lg-up trustpilot-trustbox">
+                    <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="5304d93900006400057840a9" data-style-height="24px" data-style-width="100%" data-theme="light">
+                        <a href="https://www.trustpilot.com/review/247homerescue.co.uk" target="_blank">Trustpilot</a>
+                    </div>
+                </div>
             </div>
-            <div class="menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="main-nav">
-                <ul>
-                    <li>
-                        <a class="<?php if(strpos($current_uri, '/')) echo " active "; ?>" href="/">Home</a>
-                    </li>
-                    <li>
-                        <a class="<?php if(strpos($current_uri, 'boiler-installation-quote')) echo " active "; ?>" href="/boiler-installation-quote">Get a quote</a>
-                    </li>
-                    <li>
-                        <a class="<?php if(strpos($current_uri, 'faqs')) echo " active "; ?>" href="/faqs">FAQs</a>
-                    </li>
-                    <li>
-                        <a class="" href="https://www.247homerescue.co.uk/new-contact/">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- </div> -->
-            <!-- <div class="row"> -->
-            <!-- <div class="contact-info"><p>Need help with your new boiler? Call us on <span class="num">0345 3192 247</span></p></div> -->
-            <!-- </div> -->
         </div>
     </header>
 <div class="main-container container faqs">
@@ -359,54 +363,6 @@
                     <p>24|7 Home Rescue can offer you an A-rated, energy efficient boiler, flue, attachments and a helpful and
                         friendly Gas Safe registered installation from an initial payment starting from £599 and £40 a month
                         thereafter, including VAT depending on your payment plan.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFour">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Are all your engineers Gas safe registered?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                    <p>Yes. All of our engineers are professional, experienced central heating engineers with a Gas Safe certification,
-                        so you can rest assured you’re getting the most professional service at a fraction of the cost of
-                        other providers.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFive">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Will my new boiler installation make a mess in my home?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                <div class="card-body">
-                    <p>No. Our engineers always make sure that surfaces are protected and the area they're working on is always
-                        clean and tidy. They always tidy away their working area and do their utmost to avoid any inconvenience
-                        to your home. </p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingSix">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Do I need to do anything before the engineer arrives?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                <div class="card-body">
-                    <p>Before your installer arrives, clear away any clutter around the boiler – especially any valuables and
-                        things that could potentially break. Please make sure the boiler is easy to access and the area is
-                        free of items that could cause our engineer delays.</p>
                 </div>
             </div>
         </div>
@@ -723,6 +679,54 @@
                     <p>You’re well within your statutory rights to change your mind before your new installation. Please get
                         in touch with a member of the team and let us know as soon as possible to cancel the installation.
                         Please bear in mind that any payments and refunds are subject to our discretion.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Are all your engineers Gas safe registered?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Yes. All of our engineers are professional, experienced central heating engineers with a Gas Safe certification,
+                        so you can rest assured you’re getting the most professional service at a fraction of the cost of
+                        other providers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Will my new boiler installation make a mess in my home?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    <p>No. Our engineers always make sure that surfaces are protected and the area they're working on is always
+                        clean and tidy. They always tidy away their working area and do their utmost to avoid any inconvenience
+                        to your home. </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Do I need to do anything before the engineer arrives?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Before your installer arrives, clear away any clutter around the boiler – especially any valuables and
+                        things that could potentially break. Please make sure the boiler is easy to access and the area is
+                        free of items that could cause our engineer delays.</p>
                 </div>
             </div>
         </div>
