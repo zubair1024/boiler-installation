@@ -11,7 +11,7 @@
 	// - Get selected boiler
 	$product_id = $_SESSION[session_id()]['product_id'];
 	$bedroom = $_SESSION[session_id()]['data']['HowManyRadiatorsAreInYourHome']['optionsSelected'];
-	$bathroom = $_SESSION[session_id()]['data']['nine']['optionsSelected'];
+	$bathroom = 'NA';
 	$client = new SoapClient("https://api.247staywarm.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$params = array(
 		'rooms' => (int)$bedroom,
@@ -49,9 +49,9 @@
 		'email' => $_POST['email'],
 		'whatheating' => isset($quote_data['one']) ? $quote_data['one'] : 'NA',
 		'DoYouHaveAHotWaterCylinder' => isset($quote_data['two']) ? $quote_data['two'] : 'NA',
-		'WouldYouLikeItRemoved' => isset($quote_data['three']) ? $quote_data['three'] : 'NA',
+		'WouldYouLikeItRemoved' => isset($quote_data['two-sub']) ? $quote_data['two-sub'] : 'NA',
 		'DoYouHaveSeperateColdWaterTank' => isset($quote_data['four']) ? $quote_data['four'] : 'NA',
-		'HowQuicklyDoesColdWaterRunFromKitchen' => isset($quote_data['five']) ? $quote_data['five'] : 'NA',
+		'HowQuicklyDoesColdWaterRunFromKitchen' => isset($quote_data['seven-sub-two']) ? $quote_data['seven-sub-two'] : 'NA',
 		'WhatTimeOfHomeDoYouLive' => isset($quote_data['six']) ? $quote_data['six'] : 'NA',
 		'IsYourFlatOn2ndFloor' => isset($quote_data['six-sub']) ? $quote_data['six-sub'] : 'NA',
 		'WhereIsBoilerLocated' => isset($quote_data['seven']) ? $quote_data['seven'] : 'NA',
@@ -94,7 +94,7 @@
 					<h1>Thank you for booking with us!</h1>
 					<p>Our engineer will visit you on your chosen day and you will soon have a brand new boiler covered and guaranteed for 7 years!</p>
 					<h4><?php print $selected_boiler->ProductName; ?></h4>
-					<p><b>Your survey date:</b> <?php print $booking_date_and_time; ?></p>
+					<p><b>We will contact you shorty to book a survey date.</p>
 				</div>
 			</div>
 		</div>	

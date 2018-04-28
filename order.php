@@ -46,10 +46,8 @@
 					</span>	
 					<img src="img/rec-boiler.png" alt="">
 				</div>
-				<div class="col-lg-6 name-and-date">
+				<div class="col-lg-6 name-and-date" style="top: 100px;">
 					<h4><?php print $selected_boiler->ProductName; ?></h4>
-					<h5>Your survey date</h5>
-					<p><?php print $booking_date_and_time; ?></p>
 				</div>
 			</div>
 			<div class="form-wrapper">
@@ -86,18 +84,18 @@
 					<input type="text" id="addressLineTwo" placeholder="Address line two" class="form-control combined" name="address-line-two">
 					<input type="text" id="addressLineThree" placeholder="Address line two" class="form-control" name="address-line-three">
 				</div>
-				<div class="form-group">
+				<!-- <div class="form-group">
 					<label for="town">Town</label>
 					<input type="text" id="town" placeholder="Town" name="town" class="form-control" required>
-				</div>
-				<div class="form-group">
+				</div> -->
+				<!-- <div class="form-group">
 					<label for="country">County</label>
 					<input type="text" id="county" placeholder="County" name="county" class="form-control" required>
-				</div>
-				<div class="form-group">
+				</div> -->
+				<!-- <div class="form-group">
 					<label for="postcode">Postcode</label>
 					<input type="text" id="postCode" placeholder="Postcode" name="postcode" class="form-control" required="">
-				</div>
+				</div> -->
 			</div>					
 			<div class="button-wrapper">
 				<button type="submit" class="btn btn-primary">Confirm and Book</button>

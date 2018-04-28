@@ -43,11 +43,11 @@
                     <div class="main-nav">
                         <ul>
                             <li><a class="<?php if(strpos($current_uri, '/')) echo "active"; ?>" href="/">Home</a></li>
-                            <li><a class="" href="https://www.247homerescue.co.uk/about-us/">About Us</a></li>
+                            <li><a class="" href="https://www.247homerescue.co.uk/about-us/" target="_blank">About Us</a></li>
                             <li><a class="<?php if(strpos($current_uri, 'boiler-installation-quote')) echo "active"; ?>" href="/boiler-installation-quote">Get a quote</a></li>
                             <li><a class="<?php if(strpos($current_uri, 'faqs')) echo "active"; ?>" href="/faqs">FAQs</a></li>
-                            <li><a class="" href="https://www.247homerescue.co.uk/testimonials/">Testimonials</a></li>
-                            <li><a class="" href="https://www.247homerescue.co.uk/new-contact/">Contact</a></li>
+                            <li><a class="" href="https://www.247homerescue.co.uk/testimonials/" target="_blank">Testimonials</a></li>
+                            <li><a class="" href="https://www.247homerescue.co.uk/new-contact/" target="_blank">Contact</a></li>
                         </ul>
                     </div>
                 </div>

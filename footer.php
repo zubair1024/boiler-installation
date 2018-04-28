@@ -1,7 +1,7 @@
 	<footer>
 		<div class="footer-links">
 			<!-- <a href="#">Terms and Conditions</a> -->
-			<a href="https://www.247homerescue.co.uk/privacy-policy/">Privacy Policy</a>
+			<a href="https://www.247homerescue.co.uk/privacy-policy/" target="_blank">Privacy Policy</a>
 		</div>
 		<div class="container">
 			<div class="company-info">

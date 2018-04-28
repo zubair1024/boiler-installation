@@ -12,7 +12,7 @@
     }
     if ($('#calendar').length > 0) {
       $('#calendar').fullCalendar({
-        defaultView: 'month',
+        defaultView: 'agendaFourDays',
         startDate: new Date(),
         defaultDate: new Date(new Date().getTime() + (2 * 24 * 60 * 60 * 1000)),
         views: {
@@ -31,8 +31,8 @@
         displayEventTime: false,
         slotDuration: '02:00:00',
         columnHeaderFormat: 'dddd D MMMM',
-        weekends: false,
-        height: 800,
+        // weekends: false,
+        height: 400,
         themeSystem: 'bootstrap4',
         events: {
           url: '/calendar-callbacks.php',
@@ -63,7 +63,7 @@
           $(this).css('border-color', '#df1514');
         },
         eventRender: function (event, element, view) {
-          // $(element).css("margin", "0px 25px 5px 25px");
+          $(element).css("margin", "0px 25px 5px 25px")
         }
       });
     }
@@ -106,22 +106,18 @@
 })(jQuery);
 
 function optSelect(num, opt, next, el) {
-  console.log('optSelect');
+  console.log(num, opt, next, el);
   jQuery(el).parent().find(jQuery('a')).removeClass("selected");
   jQuery(el).addClass("selected");
-
-
   if (num == "fifteen") {
     $(".btn-loader").css("display", "block");
   }
-
   jQuery.ajax({
     type: "POST",
     url: "/callbacks.php",
     data: { type: 'questions', quesNum: num, optSelected: opt, nxt: next },
     dataType: 'json',
     success: function (response) {
-
       if (num == "fifteen") {
         window.location.href = '/recommended-boilers';
       } else {
@@ -140,6 +136,7 @@ function serviceNotProvided(fuel) {
   });
 }
 function display(html, divInfo) {
+  console.log(divInfo);
   currentDiv = divInfo.quesNumber;
   jQuery('#data-' + currentDiv).nextAll('.row').remove();
   jQuery('.main-container').append(html);
@@ -206,7 +203,7 @@ function boilerSelected(id) {
     dataType: 'json',
     success: function (response) {
       if (response.msg == 'success') {
-        window.location.href = '/selected-boiler';
+        window.location.href = '/order';
       }
     }
   });
