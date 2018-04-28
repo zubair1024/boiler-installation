@@ -13,7 +13,7 @@
 	// - Get selected boiler
 	$product_id = $_SESSION[session_id()]['product_id'];
 	$bedroom = $_SESSION[session_id()]['data']['HowManyRadiatorsAreInYourHome']['optionsSelected'];
-	$bathroom = $_SESSION[session_id()]['data']['nine']['optionsSelected'];
+	$bathroom = '0';
 	$client = new SoapClient("https://api.247staywarm.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$params = array(
 		'rooms' => (int)$bedroom,
@@ -27,8 +27,8 @@
 		}
 	}
 	// - Get booking date and time
-	$booking_date = strtotime($_SESSION[session_id()]['data']['slot']);
-	$booking_date_and_time = date('l jS F',$booking_date).' at '.date('ga', $booking_date);
+	// $booking_date = strtotime($_SESSION[session_id()]['data']['slot']);
+	// $booking_date_and_time = date('l jS F',$booking_date).' at '.date('ga', $booking_date);
 
 ?>
 <div class="main-container order">
@@ -46,7 +46,7 @@
 					</span>	
 					<img src="img/rec-boiler.png" alt="">
 				</div>
-				<div class="col-lg-6 name-and-date" style="top: 100px;">
+				<div class="col-lg-6 name-and-date">
 					<h4><?php print $selected_boiler->ProductName; ?></h4>
 				</div>
 			</div>

@@ -6603,7 +6603,7 @@ a.text-dark:hover, a.text-dark:focus {
         font-size: 17px;
         line-height: 1;
         font-weight: bold;
-        padding: 9px 10px 3px;
+        padding: 5px 10px 0px;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px; }
         #nav-header .container .contact-info .num {
@@ -6671,16 +6671,17 @@ a {
     color: #b7b7b7; }
 
 .main-container {
-  margin-top: 64px; }
+  margin-top: 144px; }
 
 @media (min-width: 768px) {
   .main-container {
-    margin-top: 118px; } }
+    margin-top: 150px; } }
 .main-banner {
-  background-image: url(../img/main-banner-tablet.jpg);
-  background-color: #007fb1;
+  /* background-image: url(../img/main-banner-tablet.jpg); */
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: inherit;
+  /* height: 50%; */
   background-position-x: right;
   background-position-y: top; }
   .main-banner .main-text {
@@ -6701,8 +6702,9 @@ a {
 
 @media (min-width: 768px) {
   .main-banner {
-    background-image: url(../img/main-banner-tablet.jpg);
+    /* background-image: url(../img/main-banner-tablet.jpg); */
     background-size: inherit;
+    /* height: 50%; */
     background-position-x: right;
     background-position-y: top; }
     .main-banner .main-text {
@@ -6715,8 +6717,9 @@ a {
         width: 200px; } }
 @media (min-width: 992px) {
   .main-banner {
-    background-image: url(../img/main-banner-desktop.jpg);
+    /* background-image: url(../img/main-banner-desktop.jpg); */
     background-size: 1366px;
+    /* height: 50%; */
     background-position-x: center; }
     .main-banner .main-text {
       text-align: left;
@@ -7418,6 +7421,12 @@ a {
 #nav-header .main-nav {
   top: 24px;
 }
+}
+
+.banner-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

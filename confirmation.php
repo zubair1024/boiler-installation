@@ -11,7 +11,7 @@
 	// - Get selected boiler
 	$product_id = $_SESSION[session_id()]['product_id'];
 	$bedroom = $_SESSION[session_id()]['data']['HowManyRadiatorsAreInYourHome']['optionsSelected'];
-	$bathroom = 'NA';
+	$bathroom = '0';
 	$client = new SoapClient("https://api.247staywarm.co.uk/service1.asmx?WSDL", array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_NONE));
 	$params = array(
 		'rooms' => (int)$bedroom,
@@ -25,8 +25,8 @@
 		}
 	}
 	// - Get booking date and time
-	$booking_date = strtotime($_SESSION[session_id()]['data']['slot']);
-	$booking_date_and_time = date('l jS F',$booking_date).' at '.date('ga', $booking_date);
+	// $booking_date = strtotime($_SESSION[session_id()]['data']['slot']);
+	// $booking_date_and_time = date('l jS F',$booking_date).' at '.date('ga', $booking_date);
 
 	// - Quote data
 	$quote_data = array();
@@ -45,7 +45,7 @@
 		'mob' => 'NA',
 		'altnumber' => 'NA',
 		'address' => $_POST['address-line-one'],
-		'postcode' => $_POST['postcode'],
+		'postcode' => isset($quote_data['postcode']) ? $quote_data['postcode'] : 'NA',
 		'email' => $_POST['email'],
 		'whatheating' => isset($quote_data['one']) ? $quote_data['one'] : 'NA',
 		'DoYouHaveAHotWaterCylinder' => isset($quote_data['two']) ? $quote_data['two'] : 'NA',
@@ -57,7 +57,6 @@
 		'WhereIsBoilerLocated' => isset($quote_data['seven']) ? $quote_data['seven'] : 'NA',
 		'DoYouWantBoilerMoved' => isset($quote_data['DoYouWantBoilerMoved']) ? $quote_data['DoYouWantBoilerMoved'] : 'NA',
 		'WhereWouldYouLikeYourNewBoiler' => isset($quote_data['seven-sub-two-extra']) ? $quote_data['seven-sub-two-extra'] : 'NA',
-		// 'WhereWillYourNewBoilerBeLocated'
 		'HowManyRadiatorsAreInYourHome' => isset($quote_data['HowManyRadiatorsAreInYourHome']) ? $quote_data['HowManyRadiatorsAreInYourHome'] : 'NA',
 		'HowManyBathtubsAreInYourHome' => isset($quote_data['nine']) ? $quote_data['nine'] : 'NA',
 		'HowManyStandaloneMixersShowers' => isset($quote_data['ten']) ? $quote_data['ten'] : 'NA',
@@ -74,8 +73,8 @@
 		'Make' => isset($quote_data['seventeen']) ? $quote_data['seventeen'] : 'NA',
 		'Model' => isset($quote_data['eighteen']) ? $quote_data['eighteen'] : 'NA',
 		'SelectedBoiler' => $product_id,
-		'BookingDate' => date('d/M/Y',$booking_date),
-		'BookingSlot' => date('h A', $booking_date)
+		// 'BookingDate' => date('d/M/Y',$booking_date),
+		// 'BookingSlot' => date('h A', $booking_date)
 	];
 ?>
 <?php 

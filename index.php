@@ -68,20 +68,8 @@
 	?>
 	<div class="main-container">
 		<div class="section-one main-banner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 main-text">
-						<h1>Need a new boiler?</h1>
-						<div class="boiler-image">
-							<img src="img/main-boiler-image.png" alt="">
-						</div>
-						<p>Buy a new boiler on-line today by 3pm and get it installed the next day</p>
-						<a href="/boiler-installation-quote" class="btn">Get a price in 90 seconds</a>
-					</div>
-				<!-- <div class="col-md-4 boiler-image">
-					<img src="img/main-boiler-image.png" alt="">
-				</div> -->
-			</div>
+		<img src="../img/main-banner-tablet.jpg" class="hidden-sm-down img-fluid banner-image ">
+		<img src="../img/main-banner-small.jpg" class="hidden-md-up img-fluid banner-image ">
 		</div>	
 	</div>
 	<div class="section-two">
