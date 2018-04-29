@@ -68,8 +68,10 @@
 	?>
 	<div class="main-container">
 		<div class="section-one main-banner">
+		<a href="/boiler-installation-quote">
 		<img src="../img/main-banner-tablet.jpg" class="hidden-sm-down img-fluid banner-image ">
 		<img src="../img/main-banner-small.jpg" class="hidden-md-up img-fluid banner-image ">
+		</a>
 		</div>	
 	</div>
 	<div class="section-two">
