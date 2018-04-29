@@ -47,7 +47,7 @@
 		'address' => $_POST['address-line-one'],
 		'addressTwo' => $_POST['address-line-two'],
 		'addressThree' => $_POST['address-line-three'],
-		'postcode' => isset($quote_data['postcode']) ? $quote_data['postcode'] : 'NA',
+		'postcode' => isset($_POST['postcode']) ? $_POST['postcode'] : 'NA',
 		'email' => $_POST['email'],
 		'whatheating' => isset($quote_data['one']) ? $quote_data['one'] : 'NA',
 		'DoYouHaveAHotWaterCylinder' => isset($quote_data['two']) ? $quote_data['two'] : 'NA',
