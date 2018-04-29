@@ -92,10 +92,10 @@
 					<label for="country">County</label>
 					<input type="text" id="county" placeholder="County" name="county" class="form-control" required>
 				</div> -->
-				<!-- <div class="form-group">
+				<div class="form-group">
 					<label for="postcode">Postcode</label>
 					<input type="text" id="postCode" placeholder="Postcode" name="postcode" class="form-control" required="">
-				</div> -->
+				</div>
 			</div>					
 			<div class="button-wrapper">
 				<button type="submit" class="btn btn-primary">Confirm and Book</button>

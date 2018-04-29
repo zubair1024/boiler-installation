@@ -45,6 +45,8 @@
 		'mob' => 'NA',
 		'altnumber' => 'NA',
 		'address' => $_POST['address-line-one'],
+		'addressTwo' => $_POST['address-line-two'],
+		'addressThree' => $_POST['address-line-three'],
 		'postcode' => isset($quote_data['postcode']) ? $quote_data['postcode'] : 'NA',
 		'email' => $_POST['email'],
 		'whatheating' => isset($quote_data['one']) ? $quote_data['one'] : 'NA',
