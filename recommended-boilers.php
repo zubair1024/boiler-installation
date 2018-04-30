@@ -41,7 +41,7 @@
 						</div>
 					</div>
 					<div class="btns-wrapper">
-						<a onclick="boilerSelected('<?php print $boiler->ID; ?>')" class="btn">Select Boiler &amp; Book a Survey</a>
+						<a onclick="boilerSelected('<?php print $boiler->ID; ?>')" class="btn">Select Boiler</a>
 						<?php if(strpos((string)$boiler->ProductName, 'Ideal') !== false): ?>
 							<a href="/pdf/Ideal.pdf" class="btn" target="_blank">More info</a>
 						<?php endif; ?>

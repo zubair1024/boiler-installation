@@ -33,8 +33,8 @@
 ?>
 <div class="main-container order">
 	<div class="container">
-		<h1>Enter your details to confirm your booking</h1>
-		<p class="divider">You will not be charged for your survey.</p>
+		<h1>Enter your details to book your <b>FREE</b> survey</h1>
+		<p class="divider">This is a completely free of charge service.</p>
 		<form id="confirmation" action="confirmation" name="order-from" method="post" class="needs-validation" novalidate>
 			<div class="row booking-info">
 				<div class="col-lg-6 title-img">	
@@ -48,6 +48,19 @@
 				</div>
 				<div class="col-lg-6 name-and-date">
 					<h4><?php print $selected_boiler->ProductName; ?></h4>
+					<!-- <div class="col-md-6"> -->
+						<ul>
+							<li>An energy Efficient boiler</li>
+							<li>Precision heating to reduce your fuel bills</li>
+							<li>Available in a selection of styles and sizes</li>
+							<li>Designed to meet your energy efficiency needs</li>
+							<li>Quiet and compact in size</li>
+							<li>Full range of smart thermostat controls</li>
+							<li>Registration &amp; Activation of your warranty</li>
+							<li>Registration of your new boiler with Gas Safe</li>
+							<li>Removal and disposal of your old boiler</li>
+						</ul>
+					<!-- </div> -->
 				</div>
 			</div>
 			<div class="form-wrapper">
