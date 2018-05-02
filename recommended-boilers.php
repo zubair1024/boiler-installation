@@ -30,17 +30,17 @@
 							<span class="lg-text">Fully installed*</span>
 						</span>	
 						<img src="img/rec-boiler.png" alt="">
-						<h4><?php print $boiler->ProductName; ?></h4>
+						
 					</div>
 					<div class="col-md-6 info">	
 						<div class="info-wrapper">
+						<h4 style="text-align:center"><?php print $boiler->ProductName; ?></h4>
 							<p>Output kW <span><?php print isset($boiler->DHWInput) ? $boiler->DHWInput: ""; ?></span></p>
 							<p>Flow Rate <span><?php print isset($boiler->Dimension) ? $boiler->Dimension: ""; ?></span></p>
 							<p>Efficiency Rating <span><?php print isset($boiler->Weight) ? $boiler->Weight: ""; ?></span></p>
 							<p>Service Plan from <span class="finance-from">&pound;40pm</span></p>
 						</div>
-					</div>
-					<div class="btns-wrapper">
+						<div class="btns-wrapper">
 						<a onclick="boilerSelected('<?php print $boiler->ID; ?>')" class="btn">Select Boiler</a>
 						<?php if(strpos((string)$boiler->ProductName, 'Ideal') !== false): ?>
 							<a href="/pdf/Ideal.pdf" class="btn" target="_blank">More info</a>
@@ -52,6 +52,9 @@
 							<a href="/pdf/Worcestor.pdf" class="btn" target="_blank">More info</a>
 						<?php endif; ?>
 					</div>	
+					</div>
+					<br>
+					<br>
 					<br>
 					<p class="terms-and-conditions">&nbsp;&nbsp;&nbsp;*Subject to terms and conditions</p>
 				</div>	

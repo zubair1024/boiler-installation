@@ -6941,10 +6941,10 @@ a {
     background: url(../img/rec-section-bg.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
-    margin-bottom: 40px; }
+    margin-bottom: 10px; }
     .recommended-boiler .section-one .row .btns-wrapper {
       width: 100%;
-      margin: 35px auto;
+      margin: -5px auto;
       text-align: center; }
       .recommended-boiler .section-one .row .btns-wrapper a {
         margin: 15px auto auto auto;
@@ -7315,6 +7315,7 @@ a {
       color: red; }
 
 .terms-and-conditions {
+  padding-top: 6px;
   font-size: 12px;
   text-align: center; }
 

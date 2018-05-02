@@ -64,7 +64,8 @@
 				</div>
 			</div>
 			<div class="form-wrapper">
-				<div class="form-group">
+			<h2>Please provide your contact details:</h2>
+				<!-- <div class="form-group">
 					<label for="title">Title</label>
 					<select class="form-control" name="title" id="title" required>
 						<option value="">Select</option>
@@ -73,7 +74,7 @@
 						<option value="Miss">Miss</option>
 						<option value="Ms">Ms</option>
 					</select>
-				</div>
+				</div> -->
 				<div class="form-group">
 					<label for="full-name">Name</label>
 					<input type="text" name="first-name" placeholder="First name" class="form-control combined" required>
@@ -87,7 +88,7 @@
 					<label for="email">Email address</label>
 					<input type="email" name="email" placeholder="e.g james@example.com" class="form-control" required>
 				</div>
-				<div class="form-group">
+				<!-- <div class="form-group">
 					<label for="">Enter your postcode to find your address:</label>
 					<div id="postcode_lookup"></div>
 				</div>
@@ -96,7 +97,7 @@
 					<input type="text" id="addressLineOne" placeholder="Address line one" class="form-control combined" name="address-line-one" required>
 					<input type="text" id="addressLineTwo" placeholder="Address line two" class="form-control combined" name="address-line-two">
 					<input type="text" id="addressLineThree" placeholder="Address line two" class="form-control" name="address-line-three">
-				</div>
+				</div> -->
 				<!-- <div class="form-group">
 					<label for="town">Town</label>
 					<input type="text" id="town" placeholder="Town" name="town" class="form-control" required>
@@ -105,10 +106,10 @@
 					<label for="country">County</label>
 					<input type="text" id="county" placeholder="County" name="county" class="form-control" required>
 				</div> -->
-				<div class="form-group">
+				<!-- <div class="form-group">
 					<label for="postcode">Postcode</label>
 					<input type="text" id="postCode" placeholder="Postcode" name="postcode" class="form-control" required="">
-				</div>
+				</div> -->
 			</div>					
 			<div class="button-wrapper">
 				<button type="submit" class="btn btn-primary">Confirm and Book</button>
