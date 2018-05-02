@@ -95,7 +95,7 @@
 					<h1>Thank you for booking with us!</h1>
 					<p>Our engineer will visit you on your chosen day and you will soon have a brand new boiler covered and guaranteed for 7 years!</p>
 					<h4><?php print $selected_boiler->ProductName; ?></h4>
-					<p><b>We will contact you shorty to book a survey date.</p>
+					<p><b>We will contact you shortly to book a survey date.</p>
 				</div>
 			</div>
 		</div>	
