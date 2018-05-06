@@ -64,7 +64,7 @@
 				</div>
 			</div>
 			<div class="form-wrapper">
-			<h2>Please provide your contact details:</h2>
+			<h2>Book Your Free Site Survey Now:</h2>
 				<!-- <div class="form-group">
 					<label for="title">Title</label>
 					<select class="form-control" name="title" id="title" required>
@@ -112,7 +112,7 @@
 				</div> -->
 			</div>					
 			<div class="button-wrapper">
-				<button type="submit" class="btn btn-primary">Confirm and Book</button>
+				<button type="submit" class="btn btn-primary">Book Site Survey</button>
 			</div>
 		</form>
 	</div>
