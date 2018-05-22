@@ -1,6 +1,7 @@
 <head>
 	<title>247 StayWarm – Pay Monthly New Boiler Installation Deals</title>
 	<meta name="description" content="Replace your old boiler with 247 Staywarm deal, 7 years hot water and heating warranty plus FREE annual boiler service. We currently offering Free 7 years plumbing & drainage, home security and pest control. Fixed monthly cost, No hidden fees and small print!">
+	<meta name="keywords" content="monthly boiler plans, pay monthly boiler, boiler deals pay monthly, central heating boilers, combi boilers finance">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
