@@ -98,9 +98,9 @@ function question_and_options($ques_num, $opt_selected,$next) {
 					<div id='ques-seven-sub-two'>
 						<h3>How many bedrooms do you have?</h3>
 						<div class='ans-wrapper'>
-							<a onclick=\"optSelect('fifteen','3','sixteen',this);\"><img src='img/bedroom-1-3.png'></a>
-							<a onclick=\"optSelect('fifteen','4','sixteen',this);\"><img src='img/bedroom-4-min.png'></a>
-							<a onclick=\"optSelect('fifteen','5','sixteen',this);\"><img src='img/bedroom-5-or-more.png'></a>
+							<a onclick=\"optSelect('fifteen','3','sixteen',this);\"><img src='img/bathtub-1.png'></a>
+							<a onclick=\"optSelect('fifteen','4','sixteen',this);\"><img src='img/bathtubs-2.png'></a>
+							<a onclick=\"optSelect('fifteen','5','sixteen',this);\"><img src='img/bathtubs-3-or-more.png'></a>
 						</div>
 					</div>	
 				</div>

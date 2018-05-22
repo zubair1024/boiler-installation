@@ -28,6 +28,22 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<!-- Adsertor -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+_paq.push(['setConversionAttributionFirstReferrer', true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.adsertor.co.uk/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '204']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.adsertor.co.uk/piwik.php?idsite=204" style="border:0;" alt="" /></p></noscript>
+<!-- End Adsertor Code -->
 </head>
 <body>
 	<?php  $current_uri = $_SERVER['REQUEST_URI'];?>
